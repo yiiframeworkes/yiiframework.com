@@ -7,15 +7,15 @@
         </div>
         <div class="col-md-5">
             <div class="tour-subheader">
-                Step 4
+                Paso 4
             </div>
             <div class="tour-header">
-                Gii code generator
+                Generado de Código Gii
             </div>
             <div class="tour-content">
-                <p>After it's done, use generator to generate models, CRUD and more.</p>
+                <p>Después de diseñar la base de datos, use el generador para obtener los modelos, CRUD y demás.</p>
 
-                <p>Then customize code generated to fit your needs.</p>
+                <p>Luego personalice el código para ajustarlo a sus necesidades y requerimientos.</p>
             </div>
         </div>
     </div>
