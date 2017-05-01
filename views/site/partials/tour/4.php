@@ -10,7 +10,7 @@
                 Paso 4
             </div>
             <div class="tour-header">
-                Generado de Código Gii
+                Generador de Código Gii
             </div>
             <div class="tour-content">
                 <p>Después de diseñar la base de datos, use el generador para obtener los modelos, CRUD y demás.</p>
