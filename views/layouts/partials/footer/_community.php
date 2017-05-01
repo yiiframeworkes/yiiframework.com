@@ -3,24 +3,24 @@ use yii\helpers\Html;
 ?>
 <ul class="footerList">
   <li class="footerList_item">
-    <div>Community</div>
+    <div>Comunidad</div>
   </li>
   <li class="footerList_item">
-    <a href="#">Forum</a>
+    <a href="#">Foro</a>
+  </li>
+  <!--li class="footerList_item">
+    <?= Html::a('Chat en vivo', ['site/chat']) ?>
+  </li -->
+  <li class="footerList_item">
+    <a href="https://gitter.im/yiiframeworkes">Chat Gitter</a>
   </li>
   <li class="footerList_item">
-    <?= Html::a('IRC (Live Chat)', ['site/chat']) ?>
+    <a href="https://www.facebook.com/groups/171245476282742/">Grupo de Facebook</a>
   </li>
   <li class="footerList_item">
-    <a href="#">Gitter</a>
+    <a href="#">Salón de la Fama</a>
   </li>
   <li class="footerList_item">
-    <a href="#">Facebook Group</a>
-  </li>
-  <li class="footerList_item">
-    <a href="#">Hall of Fame</a>
-  </li>
-  <li class="footerList_item">
-    <a href="#">Badges</a>
+    <a href="#">Medallas</a>
   </li>
 </ul>
