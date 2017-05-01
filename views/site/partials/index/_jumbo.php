@@ -13,7 +13,7 @@ $this->registerJs("
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>La base más sólida para su aplicación PHP</h1>
+                <h1>El cimiento más sólido para su aplicación PHP</h1>
                 <p class="propaganda">
                     <strong>Yii</strong> es <em>rápido</em>, <em>seguro</em> y <em>eficiente</em> y funciona perfecto usando los valores por defecto.
                 </p>
