@@ -10,7 +10,7 @@ use yii\helpers\Url;
     <div class="row">
         <div class="col-md-12">
             <div class="dashed-heading-front">
-                <span>Latest News</span>
+                <span>Últimas Noticias</span>
             </div>
 
             <div class="row news">
@@ -23,7 +23,7 @@ use yii\helpers\Url;
                         <h2><?= Html::a(Html::encode($newsItem->title), ['news/view', 'id' => $newsItem->id, 'name' => $newsItem->slug]) ?></h2>
                         <div class="text">
                             <p><?= Markdown::process($newsItem->getTeaser(), 'gfm') ?></p>
-                            <p><?= Html::a('&raquo; read more', ['news/view', 'id' => $newsItem->id, 'name' => $newsItem->slug]) ?></p>
+                            <p><?= Html::a('&raquo; Leer más', ['news/view', 'id' => $newsItem->id, 'name' => $newsItem->slug]) ?></p>
                         </div>
                     </div>
 
@@ -34,7 +34,7 @@ use yii\helpers\Url;
                 <?php endforeach; ?>
             </div>
 
-            <a href="<?= Url::to(['news/index']) ?>" class="btn btn-front btn-block">Read all news</a>
+            <a href="<?= Url::to(['news/index']) ?>" class="btn btn-front btn-block">Leer todas las noticias</a>
         </div>
     </div>
 </div>
