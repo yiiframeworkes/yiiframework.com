@@ -13,12 +13,12 @@ $this->registerJs("
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>The solid foundation for your PHP application</h1>
+                <h1>La base más sólida para su aplicación PHP</h1>
                 <p class="propaganda">
-                    <strong>Yii</strong> is <em>fast</em>, <em>secure</em> and <em>efficient</em> and works right out of the box using reasonable defaults.
+                    <strong>Yii</strong> es <em>rápido</em>, <em>seguro</em> y <em>eficiente</em> y funciona perfecto usando los valores por defecto.
                 </p>
                 <p class="propaganda">
-                    The framework is easy to adjust to meet your needs, because Yii has been designed to be <em>flexible</em>.
+                    El framework es fácil de ajustar para satisfacer sus necesidades, porque Yii ha sido diseñado para ser <em>flexible</em>.
                 </p>
             </div>
         </div>
@@ -27,7 +27,7 @@ $this->registerJs("
         <div class="row">
             <div class="col-md-12">
                 <div class="dashed-heading-jumbo">
-                    <span><a href="<?= Url::to(['doc/guide/2.0/en/start-installation']) ?>" class="btn">Get Started</a> </span>
+                    <span><a href="<?= Url::to(['doc/guide/2.0/en/start-installation']) ?>" class="btn">Empezar</a> </span>
                 </div>
             </div>
         </div>
