@@ -3,18 +3,18 @@ use yii\helpers\Html;
 ?>
 <ul class="footerList">
   <li class="footerList_item">
-    <div>Development</div>
+    <div>Desarrollo</div>
   </li>
   <li class="footerList_item">
-    <?= Html::a('Contribute', ['site/contribute']) ?>
+    <?= Html::a('Contribuir', ['site/contribute']) ?>
   </li>
   <li class="footerList_item">
-    <?= Html::a('Latest Updates', 'https://github.com/yiisoft/yii2/commits/master') ?>
+    <?= Html::a('Últimas actualizaciones', 'https://github.com/yiisoft/yii2/commits/master') ?>
   </li>
   <li class="footerList_item">
-    <?= Html::a('Report a Bug', ['site/report-issue']) ?>
+    <?= Html::a('Reportar error', ['site/report-issue']) ?>
   </li>
   <li class="footerList_item">
-    <?= Html::a('Report Security Issue', ['site/security']) ?>
+    <?= Html::a('Reportar problema de seguridad', ['site/security']) ?>
   </li>
 </ul>
