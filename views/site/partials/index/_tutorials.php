@@ -3,7 +3,7 @@ use yii\helpers\Url;
 ?>
 <div class="tutorials">
     <div class="dashed-heading-front-section">
-        <span>Latest Tutorials</span>
+        <span>Últimos Tutoriales</span>
     </div>
     <ul class="latest-list">
         <li>
@@ -38,6 +38,6 @@ use yii\helpers\Url;
         </li>
     </ul>
     <div class="row padded-row">
-        <a href="<?= Url::to(['wiki/index']) ?>" class="btn btn-front btn-block">See all tutorials</a>
+        <a href="<?= Url::to(['wiki/index']) ?>" class="btn btn-front btn-block">Ver todos los tutoriales</a>
     </div>
 </div>
