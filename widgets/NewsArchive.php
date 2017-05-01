@@ -16,10 +16,10 @@ class NewsArchive extends Widget
     {
         $query = News::find()
             ->select([
-                'y' => 'YEAR(news_date)',
+                'y' => 'EXTRACT(YEAR FROM news_date)',
                 'c' => 'COUNT(*)',
             ])
-            ->groupBy(['YEAR(news_date)'])
+            ->groupBy(['y', 'news_date'])
             ->orderBy(['news_date' => SORT_ASC]);
 
         if (!Yii::$app->user->can('news:pAdmin')) {

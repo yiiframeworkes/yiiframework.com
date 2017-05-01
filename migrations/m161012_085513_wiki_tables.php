@@ -30,7 +30,7 @@ class m161012_085513_wiki_tables extends BaseMigration
             'total_votes' => $this->integer()->notNull()->defaultValue(0),
             'up_votes' => $this->integer()->notNull()->defaultValue(0),
             'rating' => $this->double()->notNull()->defaultValue(0),
-            'featured' => $this->boolean()->notNull()->defaultValue(0),
+            'featured' => $this->boolean()->notNull()->defaultValue(false),
 
             'comment_count' => $this->integer()->notNull()->defaultValue(0),
             'view_count' => $this->integer()->notNull()->defaultValue(0),
@@ -64,7 +64,7 @@ class m161012_085513_wiki_tables extends BaseMigration
             'updater_id' => $this->integer(),
             'updated_at' => $this->dateTime(),
 
-            'PRIMARY KEY (`wiki_id`,`revision`)',
+            'PRIMARY KEY (wiki_id,revision)',
 
         ], $this->tableOptions);
         $this->addForeignKey('fk-wiki_revision-wiki_id-wiki-id', '{{%wiki_revision}}', 'wiki_id', '{{%wiki}}', 'id', 'CASCADE', 'CASCADE');

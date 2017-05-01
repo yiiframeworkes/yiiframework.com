@@ -35,7 +35,7 @@ class m160825_210900_add_user_ranking_system extends BaseMigration
             'create_time' => $this->dateTime()->notNull(),
             'complete_time' => $this->dateTime(),
             'message' => $this->string(),
-            'notified' => $this->boolean()->notNull()->defaultValue(0),
+            'notified' => $this->boolean()->notNull()->defaultValue(false),
         ], $this->tableOptions);
         $this->addForeignKey('fk-user_badges-user_id-user-id', '{{%user_badges}}', 'user_id', '{{%user}}', 'id', 'CASCADE', 'CASCADE');
         $this->addForeignKey('fk-user_badges-badge_id-bages-id', '{{%user_badges}}', 'badge_id', '{{%badges}}', 'id', 'CASCADE', 'CASCADE');

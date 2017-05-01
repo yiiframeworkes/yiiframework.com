@@ -127,7 +127,8 @@ class News extends \yii\db\ActiveRecord
 
     public function getTeaser()
     {
-        return reset(preg_split("/\n\s+\n/", $this->content, -1, PREG_SPLIT_NO_EMPTY));
+        $items = preg_split("/\n\s+\n/", $this->content, -1, PREG_SPLIT_NO_EMPTY);
+        return reset($items);
     }
 
     /**
@@ -168,7 +169,7 @@ class News extends \yii\db\ActiveRecord
         }
         $ids = News::find()
             ->latest()
-            ->select('news.id')->distinct()
+            ->select(['news.id', 'news.news_date'])->distinct()
             ->joinWith('tags AS tags')
             ->where(['or like', 'tags.name', $likes])
             ->andWhere(['!=', 'news.id', $this->id])
