@@ -7,18 +7,18 @@
         </div>
         <div class="col-md-5">
             <div class="tour-subheader">
-                Step 5
+                Paso 5
             </div>
             <div class="tour-header">
-                Where to go next
+                ¿Qué sigue?
             </div>
             <div class="tour-content">
-                <p>Check these helpful resources:</p>
+                <p>Visite las siguientes páginas:</p>
 
                 <ul>
-                    <li>Documentation</li>
-                    <li>Community</li>
-                    <li>Extensions</li>
+                    <li>Documentación</li>
+                    <li>Comunidad</li>
+                    <li>Extensiones</li>
                 </ul>
             </div>
         </div>
