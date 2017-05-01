@@ -48,7 +48,7 @@ AppAsset::register($this);
         <?= Html::csrfMetaTags() ?>
         <?php $this->registerJs('yiiBaseUrl = ' . \yii\helpers\Json::htmlEncode(Yii::$app->request->getBaseUrl()), \yii\web\View::POS_HEAD); ?>
 
-        <title><?php if (!empty($this->title)): ?><?= Html::encode($this->title) ?> - <?php endif?>Yii PHP Framework</title>
+        <title><?php if (!empty($this->title)): ?><?= Html::encode($this->title) ?> - <?php endif?>Yii PHP Framework en Español</title>
 
         <meta property="og:site_name" content="Yii Framework" />
         <meta property="og:title" content="<?= !empty($this->title) ? Html::encode($this->title) : 'Yii Framework' ?>" />
@@ -58,7 +58,7 @@ AppAsset::register($this);
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="yiiframework" />
-        <meta name="twitter:title" content="<?= !empty($this->title) ? Html::encode($this->title) : 'Yii Framework' ?>" />
+        <meta name="twitter:title" content="<?= !empty($this->title) ? Html::encode($this->title) : 'Yii Framework en Español' ?>" />
         <meta name="twitter:description" content="" />
         <meta name="twitter:image" content="<?= Url::to(Yii::getAlias('@web/image/twitter_cover.png'), true) ?>" />
         <meta name="twitter:image:width" content="120" />
@@ -96,33 +96,34 @@ AppAsset::register($this);
                             'activateParents' => true,
                             'dropDownCaret' => '<span class="caret"></span>',
                             'items' => [
-                                ['label' => 'Guide', 'url' => ['guide/entry'], 'options' => ['title' => 'The Definitive Guide to Yii'], 'active' => ($controller == 'guide')],
-                                ['label' => 'API', 'url' => ['api/index', 'version' => reset(Yii::$app->params['versions']['api'])], 'options' => ['title' => 'API Documentation'], 'active' => ($controller == 'api')],
-                                ['label' => 'Wiki', 'url' => ['wiki/index'], 'options' => ['title' => 'Community Wiki'], 'active' => ($controller == 'wiki')],
-                                ['label' => 'Extensions', 'url' => ['extension/index'], 'options' => ['title' => 'Extensions']],
-                                ['label' => 'Community', 'items' => [
-                                    ['label' => 'Forum', 'url' => '@web/forum', 'options' => ['title' => 'Community Forum']],
-                                    ['label' => 'Live Chat', 'url' => ['site/chat']],
-                                    ['label' => 'Members', 'url' => ['/user/index'], 'options' => ['title' => 'Community Members'], 'active' => ($controller == 'user' && in_array($action, ['index', 'view']))],
-                                    ['label' => 'Hall of Fame', 'url' => ['/user/halloffame'], 'options' => ['title' => 'Community Hall of Fame']],
-                                    ['label' => 'Badges', 'url' => ['/badges'], 'options' => ['title' => 'Community Badges'], 'active' => ($controller == 'user' && in_array($action, ['badges', 'view-badge']))],
+                                ['label' => 'Guía', 'url' => ['guide/entry'], 'options' => ['title' => 'La Guía Definitiva de Yii'], 'active' => ($controller == 'guide')],
+                                ['label' => 'API', 'url' => ['api/index', 'version' => reset(Yii::$app->params['versions']['api'])], 'options' => ['title' => 'Documentación de API'], 'active' => ($controller == 'api')],
+                                ['label' => 'Wiki', 'url' => ['wiki/index'], 'options' => ['title' => 'Wiki de Comunidad'], 'active' => ($controller == 'wiki')],
+                                ['label' => 'Extensiones', 'url' => ['extension/index'], 'options' => ['title' => 'Extensiones']],
+                                ['label' => 'Comunidad', 'items' => [
+                                    ['label' => 'Foro', 'url' => '@web/forum', 'options' => ['title' => 'Foro de la Comunidad']],
+                                    //['label' => 'Live Chat', 'url' => ['site/chat']],
+                                    ['label' => 'Chat', 'url' => 'https://gitter.im/yiiframeworkes'],
+                                    ['label' => 'Miembros', 'url' => ['/user/index'], 'options' => ['title' => 'Miembros de la Comunidad'], 'active' => ($controller == 'user' && in_array($action, ['index', 'view']))],
+                                    ['label' => 'Salón de la Fama', 'url' => ['/user/halloffame'], 'options' => ['title' => 'Salón de la Fama de la Comunidad']],
+                                    ['label' => 'Medallas', 'url' => ['/badges'], 'options' => ['title' => 'Medallas de la Comunidad'], 'active' => ($controller == 'user' && in_array($action, ['badges', 'view-badge']))],
                                 ]],
-                                ['label' => 'More&hellip;', 'items' => [
-                                    ['label' => 'Learn', 'options' => ['class' => 'separator']],
-                                    ['label' => 'Books', 'url' => ['site/books']],
-                                    ['label' => 'Resources', 'url' => ['site/resources']],
-                                    ['label' => 'Develop', 'options' => ['class' => 'separator']],
-                                    ['label' => 'Download Yii', 'url' => ['site/download']],
+                                ['label' => 'Más &hellip;', 'items' => [
+                                    ['label' => 'Aprender', 'options' => ['class' => 'separator']],
+                                    ['label' => 'Libros', 'url' => ['site/books']],
+                                    ['label' => 'Recursos', 'url' => ['site/resources']],
+                                    ['label' => 'Desarrollar', 'options' => ['class' => 'separator']],
+                                    ['label' => 'Descargar Yii', 'url' => ['site/download']],
                                     //['label' => '<i class="fa fa-angle-double-right"></i>Extensions<span class="label label-warning">coming soon</span>', 'url' => 'https://yiicamp.com/extensions'],
-                                    ['label' => 'Report an Issue', 'url' => ['site/report-issue']],
-                                    ['label' => 'Report a Security Issue', 'url' => ['site/security']],
-                                    ['label' => 'Contribute to Yii', 'url' => ['/site/contribute']],
-                                    ['label' => 'About', 'options' => ['class' => 'separator']],
-                                    ['label' => 'What is Yii?', 'url' => ['guide/view', 'type' => 'guide', 'version' => reset(Yii::$app->params['versions']['api']), 'language' => 'en', 'section' => 'intro-yii']],
-                                    ['label' => 'News', 'url' => ['news/index'], 'active' => ($controller == 'news')],
-                                    ['label' => 'License', 'url' => ['site/license']],
-                                    ['label' => 'Team', 'url' => ['site/team']],
-                                    ['label' => 'Official logo', 'url' => ['site/logo']],
+                                    ['label' => 'Reportar un problema', 'url' => ['site/report-issue']],
+                                    ['label' => 'Reportar un error de seguridad', 'url' => ['site/security']],
+                                    ['label' => 'Contribuir a Yii', 'url' => ['/site/contribute']],
+                                    ['label' => 'Acerca de', 'options' => ['class' => 'separator']],
+                                    ['label' => 'Qué es Yii?', 'url' => ['guide/view', 'type' => 'guide', 'version' => reset(Yii::$app->params['versions']['api']), 'language' => 'en', 'section' => 'intro-yii']],
+                                    ['label' => 'Noticias', 'url' => ['news/index'], 'active' => ($controller == 'news')],
+                                    ['label' => 'Licencia', 'url' => ['site/license']],
+                                    ['label' => 'Equipo', 'url' => ['site/team']],
+                                    ['label' => 'Logo Oficial', 'url' => ['site/logo']],
                                 ]],
                                 //['label' => 'Login', 'url' => ['auth/login'], 'visible' => Yii::$app->user->isGuest, 'options' => ['class' => 'hidden-lg']],
                                 //['label' => 'Signup', 'url' => ['auth/signup'], 'visible' => Yii::$app->user->isGuest, 'options' => ['class' => 'hidden-lg']],
@@ -139,13 +140,16 @@ AppAsset::register($this);
                                 'activateItems' => false,
                                 'dropDownCaret' => '<span class="caret"></span>',
                                 'items' => [
+                                        Html::button(Html::img(Yii::getAlias('@web/image/patreon.svg'), ['height' => '24', 'id' => 'patreonBtn']), [
+                                            'class' => 'btn btn-default navbar-btn',
+                                        ]),
                                     Yii::$app->user->isGuest ? (
                                         ['label' => 'Login', 'url' => ['/auth/login']]
                                     ) : (
                                         '<li>'
                                         . Html::beginForm(['/auth/logout'], 'post', ['class' => 'navbar-form'])
                                         . Html::submitButton(
-                                            'Logout', // (' . Yii::$app->user->identity->username . ')',
+                                            'Cerrar sesión', // (' . Yii::$app->user->identity->username . ')',
                                             ['class' => 'btn btn-link']
                                         )
                                         . Html::a(Html::encode(Yii::$app->user->identity->username), ['/user/profile'], ['class' => 'btn btn-link'])
