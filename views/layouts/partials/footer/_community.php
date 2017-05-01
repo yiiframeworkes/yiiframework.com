@@ -15,7 +15,7 @@ use yii\helpers\Html;
     <a href="https://gitter.im/yiiframeworkes">Chat Gitter</a>
   </li>
   <li class="footerList_item">
-    <a href="https://www.facebook.com/groups/171245476282742/">Grupo de Facebook</a>
+    <a href="https://www.facebook.com/groups/yiiframeworkes/">Grupo de Facebook</a>
   </li>
   <li class="footerList_item">
     <a href="#">Salón de la Fama</a>
