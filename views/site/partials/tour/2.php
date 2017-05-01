@@ -7,22 +7,22 @@
         </div>
         <div class="col-md-5">
             <div class="tour-subheader">
-                Step 2
+                Paso 2
             </div>
             <div class="tour-header">
-                Welcome Page
+                Página de bienvenida
             </div>
             <div class="tour-content">
-                <p>You're getting nice template which includes:</p>
+                <p>Obtiene una agradable plantilla que incluye:</p>
 
                 <ul>
                     <li>MVC</li>
-                    <li>Some static pages</li>
-                    <li>Contact via email form</li>
-                    <li>Login and logout</li>
-                    <li>Bootstrap UI template</li>
-                    <li>Powerful debugger</li>
-                    <li>and more...</li>
+                    <li>Algunas páginas estáticas</li>
+                    <li>Formulario de contacto por email</li>
+                    <li>Inicio y cierre de sesión</li>
+                    <li>Plantilla con Interfaz de usuario de Bootstrap</li>
+                    <li>Depurador poderoso</li>
+                    <li>y mucho más...</li>
                 </ul>
             </div>
         </div>
