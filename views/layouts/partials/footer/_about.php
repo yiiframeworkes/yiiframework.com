@@ -3,24 +3,24 @@ use yii\helpers\Html;
 ?>
 <ul class="footerList">
   <li class="footerList_item">
-    <div>About</div>
+    <div>Acerca de</div>
   </li>
   <li class="footerList_item">
-    <?= Html::a('About Yii', ['guide/view', 'type' => 'guide', 'version' => reset(Yii::$app->params['versions']['api']), 'language' => 'en', 'section' => 'intro-yii']) ?>
+    <?= Html::a('Acerca de Yii', ['guide/view', 'type' => 'guide', 'version' => reset(Yii::$app->params['versions']['api']), 'language' => 'en', 'section' => 'intro-yii']) ?>
   </li>
   <li class="footerList_item">
-    <?= Html::a('News', ['news/index']) ?>
+    <?= Html::a('Noticias', ['news/index']) ?>
   </li>
   <li class="footerList_item">
-    <?= Html::a('Features', ['site/features']) ?>
+    <?= Html::a('Características', ['site/features']) ?>
   </li>
   <li class="footerList_item">
-    <?= Html::a('Performance', ['site/performance']) ?>
+    <?= Html::a('Rendimiento', ['site/performance']) ?>
   </li>
   <li class="footerList_item">
-    <?= Html::a('License', ['site/license']) ?>
+    <?= Html::a('Licencia', ['site/license']) ?>
   </li>
   <li class="footerList_item">
-    <?= Html::a('Contact Us', ['site/contact']) ?>
+    <?= Html::a('Contáctenos', ['site/contact']) ?>
   </li>
 </ul>
