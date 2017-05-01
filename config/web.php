@@ -12,7 +12,7 @@ $config = [
         'log',
         app\components\BootstrapEvents::class
     ],
-    'language' => 'en',
+    'language' => 'es',
     'components' => [
         'db' => $params['components.db'],
         'elasticsearch' => $params['components.elasticsearch'],
