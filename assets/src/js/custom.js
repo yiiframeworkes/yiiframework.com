@@ -11,6 +11,10 @@ $(document).ready(function() {
         }
     });
 
+    $('#patreonBtn').on('click', function () {
+        window.location = 'https://www.patreon.com/yiiframework_es';
+    });
+
     $(function () {
       $.scrollUp({
           scrollName: 'scrollUp', // Element ID
