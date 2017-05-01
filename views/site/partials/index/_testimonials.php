@@ -12,7 +12,7 @@ $this->registerJs("
 
 <div class="testimonials">
     <div class="dashed-heading-front-section">
-        <span>Testimonials</span>
+        <span>Testimonios</span>
     </div>
     <div class="row testimonial">
 
@@ -40,6 +40,6 @@ $this->registerJs("
         </div>
     </div>
     <div class="row padded-row">
-        <a href="<?= Url::to(['site/projects']) ?>" class="btn btn-front btn-block">See more projects using Yii</a>
+        <a href="<?= Url::to(['site/projects']) ?>" class="btn btn-front btn-block">Ver más proyectos que usan Yii</a>
     </div>
 </div>
