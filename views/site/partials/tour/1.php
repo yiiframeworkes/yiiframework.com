@@ -7,19 +7,19 @@
         </div>
         <div class="col-md-5">
             <div class="tour-subheader">
-                Step 1
+                Paso 1
             </div>
             <div class="tour-header">
-                Installation
+                Instalación
             </div>
             <div class="tour-content">
-                <p>Primary way of installing Yii is by using Composer.</p>
+                <p>La principal forma de instalar Yii es usando Composer.</p>
 
                 <ul>
-                    <li>Install Composer</li>
-                    <li>Install assets plugin</li>
-                    <li>Get basic project template</li>
-                    <li>Run <kbd>./yii serve</kbd></li>
+                    <li>Instalar Composer</li>
+                    <li>Instalar plugin de assets</li>
+                    <li>Obtener la plantilla para proyecto básico</li>
+                    <li>Ejecutar <kbd>./yii serve</kbd></li>
                 </ul>
             </div>
         </div>
