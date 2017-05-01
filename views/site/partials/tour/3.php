@@ -7,15 +7,15 @@
         </div>
         <div class="col-md-5">
             <div class="tour-subheader">
-                Step 3
+                Paso 3
             </div>
             <div class="tour-header">
-                Migrations
+                Migraciones
             </div>
             <div class="tour-content">
-                <p>While Yii can virtually eliminate most repetitive coding tasks, you are responsible for the real
-                   creative work. This often starts with designing the whole system to be built, in terms of some
-                   database schema. The best way to do it is via migrations.</p>
+                <p>Mientras Yii puede virtualmente eliminar la gran mayoría de tareas repetitivas, ud es responsable del
+                    verdadero trabajo creativo. Esto a menudo inicia con el diseño del sistema que será construido, en
+                   términos de un esquema o modelo de Base de Datos. La mejor forma de hacerlo a a través de las migraciones.</p>
             </div>
         </div>
     </div>
