@@ -6,7 +6,7 @@ use yii\helpers\Html;
     <div>Comunidad</div>
   </li>
   <li class="footerList_item">
-    <a href="#">Foro</a>
+    <a href="http://www.yiiframework.com/forum/index.php/forum/25-spanish/">Foro</a>
   </li>
   <!--li class="footerList_item">
     <?= Html::a('Chat en vivo', ['site/chat']) ?>
